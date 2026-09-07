@@ -1,5 +1,6 @@
 {
   "name": "macbook_gsap_app",
+  "homepage": "https://sachikofukui.github.io/gsap_macbook/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -15,6 +18,7 @@
     "@react-three/fiber": "^9.7.0",
     "@tailwindcss/vite": "^4.3.3",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.15.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
